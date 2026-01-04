@@ -2,10 +2,10 @@
 
 Serverless Twilio-based system that captures after-hours calls, records job details, performs emergency triage, and escalates urgent cases via SMS.
 
-# Problem:
+## Problem:
 • HVAC businesses miss revenue after hours or get woken up for non-urgent calls.
 
-# Solution
+## Solution
 
 •Answers after-hours calls
 •Records caller issue
@@ -13,7 +13,7 @@ Serverless Twilio-based system that captures after-hours calls, records job deta
 •Sends structured SMS summary
 •Escalates emergencies immediately
 
-# Call Flow
+## Call Flow
 
 1.Incoming call hits Twilio Function
 2.Caller records issue
@@ -22,20 +22,20 @@ Serverless Twilio-based system that captures after-hours calls, records job deta
     •Emergency: SMS + escalation
     •Non-emergency: SMS only
 
-# Tech Stack
+## Tech Stack
 
 •Twilio Voice (TwiML, Functions)
 •Node.js
 •Serverless architecture
 •Environment-based configuration
 
-# Design Decisions
+## Design Decisions
 
 •One service per client to reduce blast radius
 •No database in v1 for reliability
 •Explicit triage to avoid false emergencies
 
-# What I Learned
+## What I Learned
 
 •Event-driven serverless flows
 •Telephony primitives
